@@ -2,7 +2,8 @@
 
 <h1>Desafio Técnico</h1>
 
-Um projeto que utiliza requisições de API e banco de dados.
+Um projeto que utiliza requisições de API e banco de dados.<br>
+> O programa devolve, em formato JSON, o que foi pedido no desafio. Um script para criar o banco de dados e as tabelas, um script para popular o banco de dados com dados da API e 2 scripts para responder os tópicos do desafio, "ranking" e "reembolso". Durante o desenvolvimento, tive problemas com o "reembolso", onde era necessário consumir informações de verbas da API. 77 deputados e 12 meses - no total, 924 requisições a serem feitas para ter todos os dados. Para resolver o problema, reduzi a quandidade de requisições de 924 para 154, com 2 meses em vez de 12. Com 154 requisições, as requisições passaram a ser aceitas, e com 3 meses e 231 requisições, eventualmente funcionava. Para obter a maior chance de sucesso possível, coloquei 2 meses como o valor padrão para ser verificado na hora de popular o banco de dados. Este valor pode ser mudado porém as requisições podem falhar.
 
 <h2>Prequisitos</h2>
 
@@ -60,7 +61,7 @@ testes, <b>2 meses</b> não causaram rejeição de requisições, algo que acont
 <li>O objetivo era pegar informações dos 77 deputados nos 12 meses do ano, porém as requisições sempre acabavam
 rejeitadas, devido ao fato de serem 924 (77 * 12) requisições simultâneas à API. O único jeito que achei para resolver
 este problema foi limitar a quantidade de meses a serem verificados.</li>
-<li>Caso o script "popular_banco.php" não execute corretamente, <b>reinicie o banco de dados rodando o script "banco.sql"
+<li>Caso o script "popular_banco.php" não execute corretamente, <b>reinicie o banco de dados executando o script "banco.sql"
 novamente</b> e execute o script "popular_banco.php" novamente.</li>
 <li><b>Não execute</b> o script "popular_banco.php" uma segunda vez <b>sem antes reiniciar</b> o banco de dados.</li>
 </ul>
