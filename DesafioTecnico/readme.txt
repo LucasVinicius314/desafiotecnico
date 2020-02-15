@@ -50,8 +50,8 @@ testes, 2 meses não causaram rejeição de requisições, algo que aconteceu so
 rejeitadas, devido ao fato de serem 924 (77 * 12) requisições simultâneas à API. O único jeito que achei para resolver
 este problema foi limitar a quantidade de meses a serem verificados.
 > Caso o script "popular_banco.php" não execute corretamente, reinicie o banco de dados rodando o script "banco.sql"
-novamente.
-> Não execute o script "popular_banco.php" uma segunda vez sem reiniciar o banco de dados.
+novamente e execute o script "popular_banco.php" novamente.
+> Não execute o script "popular_banco.php" uma segunda vez sem antes reiniciar o banco de dados.
 
 Autor: Lucas Vinícius
 Dados Abertos ALMG: http://dadosabertos.almg.gov.br/ws/ajuda/sobre
